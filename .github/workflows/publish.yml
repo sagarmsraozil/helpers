@@ -14,12 +14,11 @@ jobs:
       - uses: pnpm/action-setup@v2
         with:
           version: 7
-          lfs: true,
-          token: ${{ secrets.NPM_TOKEN }}
       - uses: actions/setup-node@v3
         with:
           node-version: 16.x
           cache: "pnpm"
+          registry-url: https://npm.pkg.github.com/
 
       - run: pnpm install --frozen-lockfile
       - name: Create Release Pull Request or Publish
