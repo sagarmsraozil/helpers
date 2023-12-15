@@ -1,1 +1,1 @@
-const firstFunction = () => {};
+const firstFunction = () => 2 + 2;
