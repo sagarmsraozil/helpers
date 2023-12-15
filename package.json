@@ -1,6 +1,6 @@
 {
-  "name": "@sagar/helpers",
-  "version": "0.0.2",
+  "name": "@sagarmsraozil/helpers",
+  "version": "0.0.1",
   "description": "",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
