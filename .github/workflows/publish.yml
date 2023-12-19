@@ -18,11 +18,8 @@ jobs:
         with:
           node-version: 16.x
           cache: "pnpm"
-          registry-url: https://registry.npmjs.org/
-      - name: Authenticate with private NPM package
-        run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
-      - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+
+      - run: pnpm install --frozen-lockfile
       - name: Create Release Pull Request or Publish
         id: changesets
         uses: changesets/action@v1
