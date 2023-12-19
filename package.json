@@ -6,7 +6,10 @@
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "private": false,
-  "repository": "git@github.com:sagarmsraozil/helpers.git",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sagarmsraozil/helpers"
+  },
   "scripts": {
     "dev": "vitest",
     "build": "tsup src/index.ts --format cjs,esm --dts",
@@ -15,7 +18,9 @@
     "ci": "pnpm run lint && pnpm run test && pnpm run build",
     "release": "pnpm run lint && pnpm run test && pnpm run build && changeset publish"
   },
-  "keywords": [],
+  "keywords": [
+    "helpers"
+  ],
   "author": "Sagar Mishra",
   "license": "MIT",
   "devDependencies": {
