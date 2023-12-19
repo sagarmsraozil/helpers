@@ -1,6 +1,6 @@
 {
-  "name": "iruka-rich-text-editor",
-  "version": "1.0.2",
+  "name": "@sagar-ozil/helpers",
+  "version": "0.0.1",
   "description": "",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
