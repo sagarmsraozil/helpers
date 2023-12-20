@@ -1,3 +1,5 @@
+import { addTwoNumbers } from "@sagarmsraozil/test/index";
+
 type ExtractMiddleWord<TWord extends string> =
   TWord extends `hello${infer R}1234` ? R : never;
 
@@ -28,6 +30,8 @@ export const applyClosureCreation = () => {
 
   const obtainedValue = value();
   const obtainedValue2 = value2();
+
+  addTwoNumbers(2, 3);
 
   return obtainedValue + obtainedValue2;
 };
